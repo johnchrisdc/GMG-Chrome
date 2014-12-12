@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+    "name": "GoogleMoGago",
+    "version": "1.0",
+    "description": "GMG . . . .",
+    "content_scripts" : [{
+        "matches" : [ "*://*.google.com.ph/*"],
+        "js" : ["gmg.js"]
+    }],
+	"browser_action": {
+    "default_icon": "gmg.png",
+    "default_popup": "popup.html"
+  },
+  "icons": { "16": "gmg.png",
+           "48": "gmg.png",
+          "128": "gmg.png" }
+
+}
